@@ -1,0 +1,10 @@
+<div *ngIf="articles">
+    <h1>Top Headlines</h1>
+    <ul>
+        <li *ngFor="let article of articles">
+            <a href="{{ article.url }}">{{ article.title }}</a>
+            <p>{{ article.description }}</p>
+            <p>{{ article.author }}</p>
+        </li>
+    </ul>
+</div>
